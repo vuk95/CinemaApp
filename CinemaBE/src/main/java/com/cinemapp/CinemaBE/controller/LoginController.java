@@ -38,12 +38,9 @@ public class LoginController {
 		UserDetails details;
 
 		try {
-			
 			Authentication authentication = authenticationManager.authenticate(token);
 			SecurityContextHolder.getContext().setAuthentication(authentication);
 			details = userDetailsService.loadUserByUsername(loginDTO.getEmail());
-			//userService.checkIfEmailIsVerified(details.getUsername());
-
 		}
 		catch (Exception e) {
 			return ResponseEntity.status(HttpStatus.FORBIDDEN).body(new AuthenticationResponse(e.getMessage()));
@@ -53,5 +50,5 @@ public class LoginController {
 		
 		return ResponseEntity.ok(new AuthenticationResponse(jwtToken, "ok"));
 	}
-
+	
 }
