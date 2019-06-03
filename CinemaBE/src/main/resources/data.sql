@@ -1,0 +1,3 @@
+INSERT INTO USER(USER_ID, CITY, EMAIL, FIRST_NAME, LAST_NAME, PASSWORD, PHONE_NUMBER) values (1, 'Feketic', 'simple@gmail.com', 'Vuk', 'Novakovic', '$2a$10$aagXeYoSAyG4sFQ/e/CyBOZFciTAYHLU0Xte1QpStPKpqYOelc/pG', '123456789');
+
+INSERT INTO USER(USER_ID, CITY, EMAIL, FIRST_NAME, LAST_NAME, PASSWORD, PHONE_NUMBER) values (2, 'New York', 'admin@gmail.com', 'admin', 'admin', '$2a$10$aagXeYoSAyG4sFQ/e/CyBOZFciTAYHLU0Xte1QpStPKpqYOelc/pG', '123456789');
