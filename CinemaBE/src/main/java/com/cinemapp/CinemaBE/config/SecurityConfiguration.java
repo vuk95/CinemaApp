@@ -61,7 +61,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 		return authenticationTokenFilter;
 	}
  	
-	private static final String[] AUTH_WHITELIST = { "/login", "/get-profile" };
+	private static final String[] AUTH_WHITELIST = { "/login", "/register" };
 
 	@Override
 	protected void configure(HttpSecurity httpSecurity) throws Exception {
